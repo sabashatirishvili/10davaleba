@@ -9,10 +9,10 @@ def primeOrComposite():
     if x < 2:
         return "არც მარტივია და არც შედგენილია"
 
-    for i in range(2, int(math.sqrt(x))+1):
+    for i in range(2, x):
         if x % i == 0:
-            return "მარტივია"
+            return "შემდგენილია"
     
-    return "შედგენილია"
+    return "მარტივია"
 
 print(primeOrComposite())
