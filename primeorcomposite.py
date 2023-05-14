@@ -8,7 +8,7 @@ def primeOrComposite():
     if x < 2:
         return "არც მარტივია და არც შედგენილია"
 
-    for i in range(2, x):
+    for i in range(2, x**0.5):
         if x % i == 0:
             return "შედგენილია"
     
